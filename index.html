@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>仙术杯精彩回放</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<button class="nav-button" onclick="toggleMenu()">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</button>
+
+<nav class="nav-menu">
+    <ul>
+        <li><a href="https://live.bilibili.com/blackboard/era/M8mMwutyI06WCb0R.html">主页</a></li>
+        <li><a href="#first">初赛</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+<!-- Add your 初赛 content here -->
+<section id="first">
+    <h1>初赛</h1>
+    <div class="player-container">
+        <div class="video-section">
+            <div class="video-wrapper">
+                <iframe src="//player.bilibili.com/player.html?bvid=BV1SukfYFEmb&page=1"
+                        scrolling="no"
+                        border="0"
+                        frameborder="no"
+                        framespacing="0"
+                        allowfullscreen="true">
+                </iframe>
+            </div>
+        </div>
+        <div class="timestamp-section">
+            <table class="timestamp-table">
+                <thead>
+                <tr>
+                    <th>时间</th>
+                    <th>精彩时刻</th>
+                </tr>
+                </thead>
+                <tbody id="timestampBody">
+                <!-- Timestamps will be added here via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+<script src="js/toggle.js"></script>
+<script src="js/preliminary.js"></script>
+</body>
+</html>
