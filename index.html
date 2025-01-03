@@ -25,13 +25,15 @@
 </nav>
 
 
-<!-- Add your 初赛 content here -->
-<section id="first">
-    <h1>初赛</h1>
+<h1>初赛</h1>
+<h2>Day 1</h2>
+
+<section id="day1-1" class="total-container">
     <div class="player-container">
         <div class="video-section">
             <div class="video-wrapper">
-                <iframe src="//player.bilibili.com/player.html?bvid=BV1SukfYFEmb&page=1"
+                <iframe id="video1-1"
+                        src="//player.bilibili.com/player.html?bvid=BV1SukfYFEmb&page=1"
                         scrolling="no"
                         border="0"
                         frameborder="no"
@@ -41,23 +43,78 @@
             </div>
         </div>
         <div class="timestamp-section">
-            <table class="timestamp-table">
-                <thead>
-                <tr>
-                    <th>时间</th>
-                    <th>精彩时刻</th>
-                </tr>
-                </thead>
-                <tbody id="timestampBody">
-                <!-- Timestamps will be added here via JavaScript -->
-                </tbody>
-            </table>
+            <div class="timestamp-filter">
+                <select id="eventTypeFilter1-1" onchange="filterTimestamps()">
+                    <option value="all">所有类型</option>
+                </select>
+            </div>
+            <div class="timestamp-table-container">
+                <table class="timestamp-table">
+                    <thead>
+                    <tr>
+                        <th>时间</th>
+                        <th>精彩时刻</th>
+                    </tr>
+                    </thead>
+                    <tbody id="timestampBody1-1">
+                    <!-- Timestamps will be added here via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
         </div>
+
+    </div>
+    <div class="timeline-wrapper">
+        <div id="timeline-container1-1"></div>
     </div>
 </section>
 
+<section id="day1-2">
+    <div class="player-container">
+        <div class="video-section">
+            <div class="video-wrapper">
+                <iframe id="video1-2"
+                        src="//player.bilibili.com/player.html?bvid=BV1SukfYFEmb&page=2"
+                        scrolling="no"
+                        border="0"
+                        frameborder="no"
+                        framespacing="0"
+                        allowfullscreen="true">
+                </iframe>
+            </div>
+        </div>
+        <div class="timestamp-section">
+            <div class="timestamp-filter">
+                <select id="eventTypeFilter1-2" onchange="filterTimestamps()">
+                    <option value="all">所有类型</option>
+                </select>
+            </div>
+            <div class="timestamp-table-container">
+                <table class="timestamp-table">
+                    <thead>
+                    <tr>
+                        <th>时间</th>
+                        <th>精彩时刻</th>
+                    </tr>
+                    </thead>
+                    <tbody id="timestampBody1-2">
+                    <!-- Timestamps will be added here via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
 
+        </div>
+
+    </div>
+    <div class="timeline-wrapper">
+        <div id="timeline-container1-2"></div>
+    </div>
+</section>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 <script src="js/toggle.js"></script>
 <script src="js/preliminary.js"></script>
+<script src="js/timeline.js"></script>
 </body>
 </html>
